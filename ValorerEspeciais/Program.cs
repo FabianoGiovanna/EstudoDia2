@@ -17,6 +17,8 @@ namespace ValorerEspeciais
             float nan = float.NaN;
             int result = intMaxValue + 1;
             double overflow = 2 * double.MaxValue;
+            float underflow1, underflow2;
+            underflow1 = underflow2 = 10000.0F;
 
             Console.WriteLine(intMaxValue);
             Console.WriteLine(intMinValue);
@@ -29,6 +31,7 @@ namespace ValorerEspeciais
             Console.WriteLine(nan);
             Console.WriteLine(result);
             Console.WriteLine(overflow);
+            Console.WriteLine(underflow1 == underflow2 + 0.00000001F);
         }
     }
 }
