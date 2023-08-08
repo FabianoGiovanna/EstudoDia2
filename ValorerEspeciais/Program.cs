@@ -15,6 +15,7 @@ namespace ValorerEspeciais
             double positiveInfinite = double. PositiveInfinity;
             double negativeInfinite = double. NegativeInfinity;
             float nan = float.NaN;
+            int result = intMaxValue + 1;
 
             Console.WriteLine(intMaxValue);
             Console.WriteLine(intMinValue);
@@ -25,6 +26,7 @@ namespace ValorerEspeciais
             Console.WriteLine(positiveInfinite);
             Console.WriteLine(negativeInfinite);
             Console.WriteLine(nan);
+            Console.WriteLine(result);
         }
     }
 }
