@@ -6,21 +6,24 @@ namespace Cilindro
     {
         static void Main(string[] args)
         {   
-            float volume, superficialArea;
-            float pi = 3.1415926f;
+            double volume, superficialArea;
+            double pi = Math.PI;
 
             Console.WriteLine("Welcome to cylinder calculator\n");
             Console.WriteLine("Insert height: ");
+
             string height = Console.ReadLine();
-            float heightConvert = float.Parse(height);
+            double heightConvert = double.Parse(height);
+
             Console.WriteLine("Insert radius: ");
+
             string radius = Console.ReadLine();
-            float radiusConvert = float.Parse(radius);
+            double radiusConvert = double.Parse(radius);
 
-            volume = pi * (radius * radius) * height;
-            superficialAreaArea = 2 * pi * radius * (radius + height);
+            volume = pi * Math.Pow(radiusConvert, 2) * heightConvert;
+            superficialArea = 2 * pi * radiusConvert * (radiusConvert + heightConvert);
 
-            Console.WriteLine("Volume = {volume}     Superficial Area = {superficialArea}" ,volume, superficialArea);
+            Console.WriteLine($"Volume = {volume}     Superficial Area = {superficialArea}" ,volume, superficialArea);
 
 
 
